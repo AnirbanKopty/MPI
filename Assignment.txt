@@ -1,0 +1,4 @@
+1. Write a MPI program to add ranks of all odd-ranked processes and
+collect & print the result at rank 1 process. Similarly, in the same
+program add ranks of all even-ranked processes and collect & print
+the result at rank 0 process.
