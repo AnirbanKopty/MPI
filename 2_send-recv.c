@@ -22,6 +22,7 @@ int argc; char *argv[];
     if(MyRank != 0)
     {
         sprintf(Message, "Hello World from %d", MyRank);
+        // Message = "Hello World"
         Destination = 0;
         Destination_tag = 0;
 

@@ -23,7 +23,7 @@ int main(int argc, char **argv)
     {
         // use of wildcards at receiver side
         MPI_Recv(&num, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
-        printf("Receiver side Rank %d : Num=%d, Source=%d, Tag=%d \n", rank, num, status.MPI_SOURCE, status.MPI_TAG);
+        printf("Receiver side Rank %d : Num=%d, Source=%d, Tag=%d \n Errorstatus=%d \n", rank, num, status.MPI_SOURCE, status.MPI_TAG, status.MPI_ERROR);
     }
 
     MPI_Finalize();
